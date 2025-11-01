@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crypto Arbitrage Alerts</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="global-audio-control">
+<button id="global-audio-btn">
+<span class="audio-icon">🔇</span> Enable All Sounds
+</button>
+</div>
+
+<!-- eurc Section -->
+<div class="token-section">
+<div class="comparison-container">
+<div class="comparison-group">
+<h3>EURC Kyber vs MEXC 
+<span id="eurc-funding-rate" class="funding-rate">
+<span class="funding-rate-value">Loading...</span>
+<span class="next-funding-time"><span id="eurc-next-funding">--:--:--</span></span>
+</span>
+</h3>
+<div class="price-container">
+<p>Buy: <span id="eurc-kyber-buy-alert" aria-live="polite">Loading...</span></p>
+<p>Sell: <span id="eurc-kyber-sell-alert" aria-live="polite">Loading...</span></p>
+</div>
+</div>
+
+<div class="comparison-group">
+<h3>EURC Kyber vs Jup</h3>
+<div class="price-container">
+<p>Buy: <span id="eurc-kyber-jup-buy-alert" aria-live="polite">Loading...</span></p>
+<p>Sell: <span id="eurc-kyber-jup-sell-alert" aria-live="polite">Loading...</span></p>
+</div>
+</div>
+
+<div class="comparison-group">
+<h3>EURC Kyber vs Pyth</h3>
+<div class="price-container">
+<p>Buy: <span id="eurc-kyber-pyth-buy-alert" aria-live="polite">Loading...</span></p>
+<p>Sell: <span id="eurc-kyber-pyth-sell-alert" aria-live="polite">Loading...</span></p>
+</div>
+</div>
+
+<div class="comparison-group">
+<h3>EURC Jup vs Pyth</h3>
+<div class="price-container">
+<p>Buy: <span id="eurc-jup-pyth-buy-alert" aria-live="polite">Loading...</span></p>
+<p>Sell: <span id="eurc-jup-pyth-sell-alert" aria-live="polite">Loading...</span></p>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- Add this script tag after your other scripts -->
+
+<script src="global-audio.js"></script>
+<script src="eurc.js"></script>
+<script src="eurc-jup.js"></script>
+
+</body>
+</html>
